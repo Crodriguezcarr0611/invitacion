@@ -1,0 +1,100 @@
+.color-fondo{
+    background-color: #e6e4dd;
+}
+
+.primera-seccion{
+    /*background-color: red;*/
+    height: 950px;
+}
+
+.segunda-seccion{
+    /*background-color: blue;*/
+    height: 950px;
+}
+
+.contenedor-invitacion {
+  position: relative; /* Esto crea el "marco" de referencia */
+  width: 100%;
+  min-height: 250px;
+  /*border: 1px solid #ccc;*/
+  overflow: hidden; /* Evita que el SVG se salga si es muy grande */
+}
+
+.decoracion-esquina {
+  position: absolute; /* Se "despega" del flujo y busca al padre relative */
+  top: 0;             /* Pegado arriba */
+  left: 0;            /* Pegado a la izquierda */
+  width: 180px;        /* Ajusta el tamaño a tu gusto */
+  height: auto;
+  z-index: 10;        /* Para que siempre esté por encima del texto */
+}
+
+.decoracion-hojas-fotos {
+  position: absolute; /* Se "despega" del flujo y busca al padre relative */
+  top: 0;             /* Pegado arriba */
+  left: 0;            /* Pegado a la izquierda */
+  width: auto;        /* Ajusta el tamaño a tu gusto */
+  height: auto;
+  z-index: 10;        /* Para que siempre esté por encima del texto */
+}
+
+.cuadrado-redondeado {
+  width: 70%;
+  height: 90%;
+  border-radius: 300px; /* Ajusta este valor para más o menos redondeo */
+  border: 2px solid #604C38;
+}
+
+.cuadrado-redondeado-interno {
+  width: 90%;
+  height: 90%;
+  background-size: cover;
+  background-position: center;
+  animation: cambioFondo 3s infinite;
+  border-radius: 300px;  
+  position: relative;
+  overflow: hidden;
+}
+
+.fondo {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-size: cover;
+  animation: fade 6s infinite;
+  z-index: 10;
+}
+
+.fondo1 {
+  background-size: cover;
+  background-image: url('../imagenes/imagen-prueba1.jpg');
+  z-index: 10;
+}
+
+.fondo2 {
+  background-image: url('../imagenes/imagen-prueba2.jpg');
+  background-size: cover;
+  animation-delay: 3s; /* Empieza a mitad del ciclo */
+  opacity: 0;
+  z-index: 10;
+}
+
+.hoja-derecha {
+  position: relative; 
+  top: -50px; 
+  left: 100px; 
+  background-color: red;
+}
+
+.hoja-izquierda {
+  position: relative; 
+  top: 500px; 
+  right: 500px; 
+  background-color: green;
+}
+
+@keyframes fade {
+  0%, 10% { opacity: 0; }
+  40%, 60% { opacity: 1; }
+  90%, 100% { opacity: 0; }
+}
