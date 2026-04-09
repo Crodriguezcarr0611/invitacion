@@ -33,14 +33,14 @@
   position: absolute; /* Se "despega" del flujo y busca al padre relative */
   top: 0;             /* Pegado arriba */
   left: 0;            /* Pegado a la izquierda */
-  width: auto;        /* Ajusta el tamaño a tu gusto */
-  height: auto;
+  width: 150px;        /* Ajusta el tamaño a tu gusto */
+  height: 150px;
   z-index: 10;        /* Para que siempre esté por encima del texto */
 }
 
 .cuadrado-redondeado {
   width: 70%;
-  height: 90%;
+  height: 70%;
   border-radius: 300px; /* Ajusta este valor para más o menos redondeo */
   border: 2px solid #604C38;
 }
@@ -81,15 +81,15 @@
 
 .hoja-derecha {
   position: relative; 
-  top: -50px; 
-  left: 100px; 
+  top: -80px; 
+  left: 20px; 
   background-color: red;
 }
 
 .hoja-izquierda {
   position: relative; 
-  top: 500px; 
-  right: 500px; 
+  top: 320px; 
+  right: 190px; 
   background-color: green;
 }
 
