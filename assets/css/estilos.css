@@ -1,5 +1,70 @@
-.color-fondo{
+/* Contenedor principal para centrarlo todo */
+.loader-container {
+  position: fixed; /* Ocupa toda la pantalla incluso al hacer scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff5f5; /* Color de fondo sólido para tapar lo de atrás */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999; /* El número más alto posible */
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Estilos para el SVG del corazón */
+.heart-loader {
+  width: 80px;
+  height: auto;
+  fill: #e0245e; /* Color rojo/rosa del corazón */
+  /* Nombre de la animación | Duración | Curva de tiempo | Repetición */
+  animation: latido 1.2s ease-in-out infinite;
+}
+
+/* Texto opcional debajo del corazón */
+.loading-text {
+  margin-top: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #888;
+  font-size: 1.1rem;
+}
+
+/* Definición de la animación del latido (cambio de escala y opacidad) */
+@keyframes latido {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  15% {
+    transform: scale(1.25); /* Se agranda un poco */
+    opacity: 0.8;
+  }
+  30% {
+    transform: scale(1); /* Vuelve al tamaño normal */
+    opacity: 1;
+  }
+  45% {
+    transform: scale(1.15); /* Un segundo latido más pequeño */
+    opacity: 0.9;
+  }
+  60% {
+    transform: scale(1); /* Regresa y espera */
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1); /* Pausa antes del siguiente ciclo */
+  }
+}
+
+/******************************************/
+
+.contenido-invitacion{
     background-color: #e6e4dd;
+    display: none; /* Oculto por defecto */
+    transition: opacity 1.5s ease; /* Transición suave al aparecer */
 }
 
 .primera-seccion{

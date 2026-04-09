@@ -11,46 +11,166 @@
     />
     <link rel="stylesheet" href="assets/css/estilos.css" />
   </head>
-  <body class="color-fondo">
-    <div class="row">
-        <div class="col-12 col-md-6 primera-seccion">
-            <div class="contenedor-invitacion">
-                <img src="assets/imagenes/hoja-borde.svg" alt="" class="decoracion-esquina"/>
-                <div style=" display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; margin-top: -40px; margin-bottom: 50px;">
-                    <svg viewBox="0 0 500 120" width="100%" height="200px">
-                        <path id="curva-boda" d="M 50,150 Q 250,50 450,150" fill="transparent"/>
-                        <text font-family="Garamond" font-size="50" fill="#604C38">
-                            <textPath xlink:href="#curva-boda" startOffset="50%" text-anchor="middle">¡Nos casamos!</textPath>
-                        </text>
-                    </svg>
-                    <img src="assets/imagenes/hoja-centro.svg" alt="" style="margin-top: -40px; width: 25%;"/>
-                </div>
-            </div>
-            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; margin-top: -15px;">
-                <p style="font-family: Garamond; font-size: 43px; color: #604C38;">Eduardo & Kathy</p>
-                <p style="font-family: Garamond; font-size: 15px; color: #604C38;">&#9672;&#8212;&#8212;&#8212;     25. 04. 2026    &#8212;&#8212;&#9672;</p>
-            </div>
-            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; margin-top: 120px;">
-              <p style="font-family: Garamond; font-size: 15px; color: #604C38;">"Así que ya no son dos, sino uno solo. Por tanto, lo que Dios unió, que no lo separe el hombre"</p>
-              <p style="font-family: Garamond; font-size: 10px; color: #604C38;">📖 Mateo 19:6 </p>
-            </div>
+  <body>
+    <div class="loader-container">
+      <svg class="heart-loader" viewBox="0 0 32 29.6">
+        <path
+          d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+        c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"
+        />
+      </svg>
+      <p class="loading-text">Cargando invitación a nuestra boda...</p>
+    </div>
+    <div class="row contenidor-invitacion">
+      <div class="col-12 col-md-6 primera-seccion">
+        <div class="contenedor-invitacion">
+          <img
+            src="assets/imagenes/hoja-borde.svg"
+            alt=""
+            class="decoracion-esquina"
+          />
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              text-align: center;
+              margin-top: -40px;
+              margin-bottom: 50px;
+            "
+          >
+            <svg viewBox="0 0 500 120" width="100%" height="200px">
+              <path
+                id="curva-boda"
+                d="M 50,150 Q 250,50 450,150"
+                fill="transparent"
+              />
+              <text font-family="Garamond" font-size="50" fill="#604C38">
+                <textPath
+                  xlink:href="#curva-boda"
+                  startOffset="50%"
+                  text-anchor="middle"
+                >
+                  ¡Nos casamos!
+                </textPath>
+              </text>
+            </svg>
+            <img
+              src="assets/imagenes/hoja-centro.svg"
+              alt=""
+              style="margin-top: -40px; width: 25%"
+            />
+          </div>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin-top: -15px;
+          "
+        >
+          <p style="font-family: Garamond; font-size: 43px; color: #604c38">
+            Eduardo & Kathy
+          </p>
+          <p style="font-family: Garamond; font-size: 15px; color: #604c38">
+            &#9672;&#8212;&#8212;&#8212; 25. 04. 2026 &#8212;&#8212;&#9672;
+          </p>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 120px;
+          "
+        >
+          <p style="font-family: Garamond; font-size: 15px; color: #604c38">
+            "Así que ya no son dos, sino uno solo. Por tanto, lo que Dios unió,
+            que no lo separe el hombre"
+          </p>
+          <p style="font-family: Garamond; font-size: 10px; color: #604c38">
+            📖 Mateo 19:6
+          </p>
+        </div>
       </div>
-      <div class="col-12 col-md-6 segunda-seccion" style="display: flex; justify-content: start; align-items: center; flex-direction: column; text-align: center; margin-top: 50px;">
+      <div
+        class="col-12 col-md-6 segunda-seccion"
+        style="
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          flex-direction: column;
+          text-align: center;
+          margin-top: 50px;
+        "
+      >
         <div class="hoja-derecha">
-          <img src="assets/imagenes/hoja-derecha.svg" alt="" class="decoracion-hojas-fotos" />
+          <img
+            src="assets/imagenes/hoja-derecha.svg"
+            alt=""
+            class="decoracion-hojas-fotos"
+          />
         </div>
         <div class="hoja-izquierda">
-          <img src="assets/imagenes/hoja-izquierda.svg" alt="" class="decoracion-hojas-fotos"/>
+          <img
+            src="assets/imagenes/hoja-izquierda.svg"
+            alt=""
+            class="decoracion-hojas-fotos"
+          />
         </div>
-        <div class="cuadrado-redondeado" style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; position: relative;">
-            <div class="cuadrado-redondeado-interno">
-              <div class="fondo fondo1"></div>
-              <div class="fondo fondo2"></div>
-            </div>
+        <div
+          class="cuadrado-redondeado"
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+          "
+        >
+          <div class="cuadrado-redondeado-interno">
+            <div class="fondo fondo1"></div>
+            <div class="fondo fondo2"></div>
+          </div>
         </div>
-        
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Esperar a que el DOM esté listo
+      document.addEventListener("DOMContentLoaded", function () {
+        // Configurar un temporizador de 5000 milisegundos (5 segundos)
+        setTimeout(function () {
+          const loader = document.querySelector(".loader-container");
+          const contenido = document.querySelector(".contenido-invitacion");
+
+          if (loader) {
+            // Añadimos una transición suave en lugar de borrarlo de golpe
+            loader.style.transition = "opacity 1s ease";
+            loader.style.opacity = "0";
+
+            // Después de que termine la animación de opacidad (1s), lo quitamos del diseño
+            setTimeout(() => {
+              loader.style.display = "none";
+
+              // Mostramos el contenido de la invitación
+              if (contenido) {
+                contenido.style.display = "block";
+                contenido.style.opacity = "0";
+                // Aparece suavemente la invitación
+                setTimeout(() => (contenido.style.opacity = "1"), 50);
+              }
+            }, 1000);
+          }
+        }, 5000); // <--- Aquí cambias los segundos (5000 = 5s)
+      });
+    </script>
   </body>
 </html>
