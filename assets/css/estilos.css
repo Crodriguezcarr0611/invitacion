@@ -59,7 +59,16 @@
   }
 }
 
-/******************************************/
+/************Fuentes de Eduardo y kathy ******************************/
+
+.lavishly-yours-regular {
+  font-family: "Lavishly Yours", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: xx-large;
+}
+
+/**********************************************************************
 
 .contenido-invitacion{
     background-color: #e6e4dd;
