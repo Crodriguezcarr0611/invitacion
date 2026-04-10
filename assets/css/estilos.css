@@ -59,13 +59,19 @@
   }
 }
 
-/************Fuentes de Eduardo y kathy ******************************/
+/************Fuentes de Eduardo y kathy y versículo******************************/
 
 .lavishly-yours-regular {
   font-family: "Lavishly Yours", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: xx-large;
+}
+
+.cormorant-upright-regular {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /**********************************************************************
