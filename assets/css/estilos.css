@@ -100,12 +100,45 @@
     height: 600px;
 }
 
+#Eduardo-Kathy {
+  font-family: 'Lavishly Yours', cursive;
+  font-size: 43px;
+  color: #604c38;
+}
+
+#fecha{
+  font-family: Garamond; 
+  font-size: 15px; 
+  color: #604c38"
+}
+
+#verisiculo{
+  font-size: 15px; 
+  color: #604c38
+}
+
+#mateo{
+  font-family: Garamond; 
+  font-size: 10px; 
+  color: #604c38
+}
+
+
+
 .contenedor-invitacion {
   position: relative; /* Esto crea el "marco" de referencia */
   width: 100%;
   min-height: 250px;
   /*border: 1px solid #ccc;*/
   overflow: hidden; /* Evita que el SVG se salga si es muy grande */
+}
+
+.centrar{
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column; 
+  text-align: center; 
 }
 
 .decoracion-esquina {
