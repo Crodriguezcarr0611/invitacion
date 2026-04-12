@@ -100,6 +100,34 @@
     height: 550px;
 }
 
+.tercera-seccion{
+    /*background-color: green;*/
+    height: 550px;
+}
+
+.cuarta-seccion{
+    background-color: yellow;
+    height: 550px;
+}
+
+.quinta-seccion{
+    background-color: orange;
+    height: 50px;
+}
+
+.btn-outline-primary {
+    border-color: #8b5e83; /* El color de tus flores */
+    color: #8b5e83;
+}
+
+.btn-outline-primary:hover {
+    background-color: #8b5e83;
+    border-color: #8b5e83;
+    color: white;
+}
+
+
+
 #Eduardo-Kathy {
   font-family: 'Lavishly Yours', cursive;
   font-size: 50px;
