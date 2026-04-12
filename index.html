@@ -18,6 +18,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="assets/css/estilos.css" />
   </head>
   <body>
@@ -162,10 +163,15 @@
           <input class="form-control form-control-sm" type="text" placeholder="Ingrese su nombre completo" aria-label="" style="margin-bottom: 20px;">
           <p class="noto-serif-jp">Pases para 02 personas</p>
           <a
-          href="https://forms.gle/9Zt3n1sH2mLh7XoC9"
           target="_blank"
           class="btn btn-outline-warning btn-sm rounded-pill d-inline-flex align-items-center gap-2 shadow-sm px-4 py-2"
           style="margin-top: 10px;"
+          onclick="Swal.fire({
+            title: '¡Gracias por confirmar tu asistencia!',
+            text: 'Estamos emocionados de contar contigo en nuestro día especial. ¡Nos vemos pronto!',
+            icon: 'success',
+            confirmButtonText: 'Cerrar'
+          } )"
         >
           <i class="bi bi-check2"></i>
           Confirmar Asistencia
