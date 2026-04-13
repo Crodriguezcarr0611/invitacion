@@ -30,6 +30,16 @@ window.addEventListener("touchstart", activarMusica);
 
 // Esperar a que el DOM esté listo
 document.addEventListener("DOMContentLoaded", function () {
+
+  Swal.fire({
+  title: "Estas lista para esta sorpresa?",
+  text: "Let's go!",
+  icon: "warning",
+  confirmButtonColor: "#3085d6",
+  cancelButtonColor: "#d33",
+  confirmButtonText: "Sí, Vamos!"
+  });
+
   const musica = document.getElementById("musicaBoda");
   // Configurar un temporizador de 5000 milisegundos (5 segundos)
   setTimeout(function () {
@@ -59,5 +69,5 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }, 1000);
     }
-  }, 5000);
+  }, 3000);
 });
