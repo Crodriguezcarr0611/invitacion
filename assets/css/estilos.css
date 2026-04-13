@@ -216,12 +216,12 @@
 
 .fondo1 {
   background-size: cover;
-  background-image: url('../imagenes/imagen-prueba1.jpg');
+  background-image: url('../imagenes/imagen-carrusel111.png');
   z-index: 10;
 }
 
 .fondo2 {
-  background-image: url('../imagenes/imagen-prueba2.jpg');
+  background-image: url('../imagenes/imagen-carrusel22.png');
   background-size: cover;
   animation-delay: 3s; /* Empieza a mitad del ciclo */
   opacity: 0;
