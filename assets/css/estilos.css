@@ -106,8 +106,8 @@
 }
 
 .cuarta-seccion{
-    /*background-color: yellow;*/
-    height: 550px;
+    background-color: yellow;
+    height: 480px;
 }
 
 .quinta-seccion{
@@ -216,7 +216,7 @@
 
 .fondo1 {
   background-size: cover;
-  background-image: url('../imagenes/imagen-carrusel111.png');
+  background-image: url('../imagenes/imagen-carrusel1111.png');
   z-index: 10;
 }
 
