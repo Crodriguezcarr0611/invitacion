@@ -33,11 +33,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   Swal.fire({
   title: "Estas lista para esta sorpresa?",
-  text: "Let's go!",
   icon: "warning",
   confirmButtonColor: "#3085d6",
   cancelButtonColor: "#d33",
-  confirmButtonText: "Sí, Vamos!"
+  confirmButtonText: "Let's go!"
   });
 
   const musica = document.getElementById("musicaBoda");
