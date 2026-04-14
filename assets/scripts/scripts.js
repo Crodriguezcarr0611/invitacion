@@ -16,37 +16,36 @@ function activarMusica() {
   }
 }
 
-// Quitamos los eventos para no saturar el navegador
-/*
-function removerEventos() {
-  window.removeEventListener("scroll", activarMusica);
-  window.removeEventListener("click", activarMusica);
-  window.removeEventListener("touchstart", activarMusica);
-}
-
-// Escuchamos scroll, clic o toque en el celular
-window.addEventListener("scroll", activarMusica);
-window.addEventListener("click", activarMusica);
-window.addEventListener("touchstart", activarMusica);
-*/
-
 // Esperar a que el DOM esté listo
 document.addEventListener("DOMContentLoaded", function () {
-
   Swal.fire({
-  title: "¿Estas lista?",
-  icon: "question",
-  confirmButtonColor: "#3085d6",
-  confirmButtonText: "Sí, estoy lista!",
-  // LAS PROPIEDADES CRÍTICAS:
-  allowOutsideClick: false, // Evita que se cierre al hacer clic fuera
-  allowEscapeKey: false,    // Evita que se cierre con la tecla Esc
-  allowEnterKey: true,      // Permite que el usuario use 'Enter' para entrar
-}).then((result) => {
-  if (result.isConfirmed) {
-    activarMusica();
-  }
-});
+    icon: "question",
+    title: "¿Estas lista?",
+
+    // ANIMACIONES AQUÍ:
+    showClass: {
+      popup: "animate__animated animate__fadeInUp", // Aparece desde abajo
+    },
+    hideClass: {
+      popup: "animate__animated animate__fadeOutDown", // Desaparece hacia abajo
+    },
+    // BOTONES AQUÍ:
+    confirmButton: "btn btn-success mr-2",
+    confirmButtonText: "Sí, estoy lista!",
+    customClass: {
+      confirmButton: "btn btn-success mr-2",
+      loader: "custom-loader",
+    },
+    showCancelButton: false,
+    // LAS PROPIEDADES CRÍTICAS:
+    allowOutsideClick: false, // Evita que se cierre al hacer clic fuera
+    allowEscapeKey: false, // Evita que se cierre con la tecla Esc
+    allowEnterKey: true, // Permite que el usuario use 'Enter' para entrar
+  }).then((result) => {
+    if (result.isConfirmed) {
+      activarMusica();
+    }
+  });
 
   const musica = document.getElementById("musicaBoda");
   // Configurar un temporizador de 5000 milisegundos (5 segundos)
