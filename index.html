@@ -112,17 +112,22 @@
           <p class="noto-serif-jp" style="color: #604c38;">Pase para 02 personas</p>
           <a
             target="_blank"
+            href = "mailto:crodriguezcarr0611@gmail.com?subject=Confirmación de Asistencia - Boda&body=Hola, confirmo mi asistencia a la boda. Mi nombre es XXX:",
             class="btn btn-outline-primary btn-sm rounded-pill d-inline-flex align-items-center gap-2 shadow-sm px-4 py-2 animate__animated animate__pulse animate__infinite"
             style="margin-top: 10px"
             onclick="
               Swal.fire({
                 title: '¡Gracias por confirmar tu asistencia!',
+                
                 text: 'Estamos emocionados de contar contigo en nuestro día especial. ¡Nos vemos pronto!',
                 icon: 'success',
                 confirmButtonText: 'Cerrar',
+                confirmButton: 'btn btn-success mr-2',
                 allowOutsideClick: false, // Evita que se cierre al hacer clic fuera
                 allowEscapeKey: false,    // Evita que se cierre con la tecla Esc
                 allowEnterKey: true,      // Permite que el usuario use 'Enter' para entrar
+                
+
               })
             "
           >
