@@ -34,11 +34,10 @@ window.addEventListener("touchstart", activarMusica);
 document.addEventListener("DOMContentLoaded", function () {
 
   Swal.fire({
-  title: "¿Estas lista para esto?",
+  title: "¿Estas lista?",
   icon: "question",
   confirmButtonColor: "#3085d6",
-  cancelButtonColor: "#d33",
-  confirmButtonText: "Let's go!",
+  confirmButtonText: "Sí, estoy lista!",
   // LAS PROPIEDADES CRÍTICAS:
   allowOutsideClick: false, // Evita que se cierre al hacer clic fuera
   allowEscapeKey: false,    // Evita que se cierre con la tecla Esc
