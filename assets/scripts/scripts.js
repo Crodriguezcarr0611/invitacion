@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
     icon: "question",
     title: "¿Estas lista?",
     iconColor: 'green',
-       
     // ANIMACIONES AQUÍ:
     showClass: {
       popup: "animate__animated animate__fadeInUp", // Aparece desde abajo
