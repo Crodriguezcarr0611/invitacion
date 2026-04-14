@@ -91,22 +91,22 @@
 }
 
 .primera-seccion{
-    /*background-color: red;*/
     height: 550px;
 }
 
 .segunda-seccion{
-    /*background-color: blue;*/
+    height: 550px;
+}
+
+.segunda-seccion{
     height: 550px;
 }
 
 .tercera-seccion{
-    /*background-color: green;*/
     height: 550px;
 }
 
 .cuarta-seccion{
-    /*background-color: yellow;*/
     height: 450px;
 }
 
@@ -118,19 +118,6 @@
     align-items: center;
     height: 100px;
 }
-
-.btn-outline-primary {
-    border-color: #8b5e83; /* El color de tus flores */
-    color: #8b5e83;
-}
-
-.btn-outline-primary:hover {
-    background-color: #8b5e83;
-    border-color: #8b5e83;
-    color: white;
-}
-
-
 
 #Eduardo-Kathy {
   font-family: 'Lavishly Yours', cursive;
@@ -144,7 +131,7 @@
   color: #604c38"
 }
 
-#verisiculo{
+#versiculo{
   font-size: 15px; 
   color: #604c38
 }
@@ -153,6 +140,16 @@
   font-family: Garamond; 
   font-size: 10px; 
   color: #604c38
+}
+
+.hora{
+  border-color: #9294e6; 
+  border-width: 1px; 
+  border-style: solid; 
+  border-radius: 20px; 
+  padding: 10px; 
+  margin-bottom: 10px; 
+  font-weight: 600;
 }
 
 
