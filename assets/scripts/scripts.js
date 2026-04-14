@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     // BOTONES AQUÍ:
     confirmButton: "btn btn-success mr-2",
-    confirmButtonText: '<i class="bi bi-heart-fill me-2" style="color: #e0245e;"></i> Sí, estoy lista!',
+    confirmButtonText: '<i class="bi bi-heart-fill me-2" style="color: #e0245e;"></i> Sí, estoy lista! <i class="bi bi-heart-fill me-2" style="color: #e0245e;"></i>',
     customClass: {
       confirmButton: "btn btn-warning mr-2",
       icon: 'animate__animated animate__pulse animate__infinite' // Esto lo hará latir infinitamente
