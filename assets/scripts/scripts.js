@@ -21,7 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
   Swal.fire({
     icon: "question",
     title: "¿Estas lista?",
-
+    iconColor: 'green',
+       
     // ANIMACIONES AQUÍ:
     showClass: {
       popup: "animate__animated animate__fadeInUp", // Aparece desde abajo
@@ -31,10 +32,10 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     // BOTONES AQUÍ:
     confirmButton: "btn btn-success mr-2",
-    confirmButtonText: "Sí, estoy lista!",
+    confirmButtonText: '<i class="bi bi-heart-fill me-2" style="color: #e0245e;"></i> Sí, estoy lista!',
     customClass: {
-      confirmButton: "btn btn-success mr-2",
-      loader: "custom-loader",
+      confirmButton: "btn btn-warning mr-2",
+      icon: 'animate__animated animate__pulse animate__infinite' // Esto lo hará latir infinitamente
     },
     showCancelButton: false,
     // LAS PROPIEDADES CRÍTICAS:
