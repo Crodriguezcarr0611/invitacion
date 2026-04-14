@@ -109,10 +109,18 @@ button:focus,
 }
 
 .tercera-seccion{
-    height: 550px;
+  margin-top: 0px; 
+  padding-top: 110px;
+  height: 550px;
+}
+
+.ceremonia-fiesta{
+  font-size: 25px; 
+  color: #604c38;
 }
 
 .cuarta-seccion{
+    margin-top: 100px;
     height: 450px;
 }
 
@@ -123,6 +131,9 @@ button:focus,
     justify-content: center;
     align-items: center;
     height: 100px;
+    margin-top: -80px; 
+    padding-top: 20px;
+    margin-bottom: 0px;
 }
 
 #Eduardo-Kathy {

@@ -86,8 +86,8 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6 tercera-seccion centrar" style="margin-top: 0px; padding-top: 110px">
-        <p class="noto-serif-jp" style="font-size: 25px; color: #604c38;">Ceremonia & fiesta</p>
+      <div class="col-12 col-md-6 tercera-seccion centrar">r
+        <p class="noto-serif-jp ceremonia-fiesta">Ceremonia & fiesta</p>
         <img src="assets/imagenes/corazones.webp"style="font-size: 23px" alt=""/>
         <p class="noto-serif-jp" style="color: #604c38;">Ceremonia principal</p>
         <div class="hora">
@@ -104,7 +104,7 @@
           Ver Ubicación
         </a>
       </div>
-      <div class="col-12 col-md-6 cuarta-seccion centrar" style="margin-top: 100px">
+      <div class="col-12 col-md-6 cuarta-seccion centrar">
         <p class="noto-serif-jp" style="font-size: 25px; margin-top: -180px; color: #604c38;">
           Confirmación de asistencia
         </p>
@@ -119,43 +119,15 @@
           <p class="noto-serif-jp" style="color: #604c38;">Pase para 02 personas</p>
           <a
             target="_blank"
-            
             class="btn btn-outline-primary btn-sm rounded-pill d-inline-flex align-items-center gap-2 shadow-sm px-4 py-2 animate__animated animate__pulse animate__infinite"
             style="margin-top: 10px"
-            onclick="
-              Swal.fire({
-                title: '¡Gracias por confirmar tu asistencia!',
-                text: 'Estamos emocionados de contar contigo en nuestro día especial. ¡Nos vemos pronto!',
-                icon: 'success',
-                confirmButtonText: 'Cerrar',
-                confirmButton: 'btn btn-success mr-2',
-                allowOutsideClick: false, // Evita que se cierre al hacer clic fuera
-                allowEscapeKey: false,    // Evita que se cierre con la tecla Esc
-                allowEnterKey: true,      // Permite que el usuario use 'Enter' para entrar
-              }).then((result) => {
-                if (result.isConfirmed) {
-                  emailjs.send('service_7z4jaug', 'template_vtyjaje', {
-                    to_name: 'Nombre de invitado: Angélica y Angélica- Confirmado para 02 personas',
-                    from_name: 'Invitado Confirmado',
-                    message: 'Angélica- Confirmado para 02 personas',
-                  }).then(
-                    function(response) {
-                      console.log('Correo enviado exitosamente!', response.status, response.text);
-                    },
-                    function(error) {
-                      console.error('Error al enviar el correo:', error);
-                    }
-                  );
-                }
-              });
-            "
-          >
+            onclick="enviarConfirmacion()">
             <i class="bi bi-check2"></i>
             Confirmar Asistencia
           </a>
         </div>
       </div>
-      <div class="col-12 col-md-6 quinta-seccion centrar" style="margin-top: -80px; padding-top: 20px; margin-bottom: 0px;padding-top: 20px;">
+      <div class="col-12 col-md-6 quinta-seccion centrar">
         <p class="noto-serif-jp" style="margin-top: 0px;">¡No faltes!</p>
         <p class="noto-serif-jp" style="margin-top: -15px;">La fiesta no será lo mismo sin ti.</p>
         <p>
