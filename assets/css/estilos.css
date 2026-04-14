@@ -83,7 +83,12 @@
 }
 
 /**********************************************************************/
-
+button:focus, 
+.btn:focus, 
+.swal2-confirm:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
 
 .contenido-invitacion{
     background-color: #e6e4dd;

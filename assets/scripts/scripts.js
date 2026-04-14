@@ -1,3 +1,5 @@
+
+
 // Función para activar la música
 function activarMusica() {
   const musica = document.getElementById("musicaBoda");
@@ -18,6 +20,7 @@ function activarMusica() {
 
 // Esperar a que el DOM esté listo
 document.addEventListener("DOMContentLoaded", function () {
+  
   Swal.fire({
     icon: "question",
     title: "¿Estas lista?",
@@ -32,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     // BOTONES AQUÍ:
     confirmButton: "btn btn-success mr-2",
-    confirmButtonText: '<i class="bi bi-heart-fill me-2" style="color: #e0245e;"></i> Sí, estoy lista! <i class="bi bi-heart-fill me-2" style="color: #e0245e;"></i>',
+    confirmButtonText: '<i class="bi bi-heart-fill me-2" style="color: #e0245e"></i>Sí, estoy lista! <i class="bi bi-heart-fill me-2" style="color: #e0245e;"></i>',
     customClass: {
       confirmButton: "btn btn-warning mr-2",
       icon: 'animate__animated animate__pulse animate__infinite' // Esto lo hará latir infinitamente
@@ -47,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
       activarMusica();
     }
   });
+
 
   const musica = document.getElementById("musicaBoda");
   // Configurar un temporizador de 5000 milisegundos (5 segundos)
